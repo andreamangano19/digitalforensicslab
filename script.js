@@ -111,7 +111,7 @@ function updateScore() {
   el.innerHTML = `Punteggio: <span style="color:#00ff88">${correctCount}</span> / ${totalQuestions}`;
 
   if (correctCount === totalQuestions && totalQuestions > 0) {
-    el.innerHTML += ' – MISSIONE COMPIUTA!';
+    el.innerHTML += ' – INVESTIGAZIONE COMPLETATA CON SUCCESSO!';
 
     const msg = document.createElement('p');
     msg.innerHTML = '<strong style="color:#00d4ff;">Redirect in corso...</strong>';
@@ -123,7 +123,7 @@ function updateScore() {
     localStorage.setItem('dfir_total', totalQuestions);
 
     setTimeout(() => {
-      window.location.href = 'congratulazioni.html';
+      window.location.href = 'congratulations.html';
     }, 2000);
   }
 }
