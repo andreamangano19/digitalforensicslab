@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>README - Letter Of Engagement</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #f4f0e8;
+      font-family: 'Georgia', serif;
+      color: #333;
+      line-height: 1.8;
+      padding: 20px;
+    }
+    .container {
+      background: #fdfdfb;
+      padding: 60px;
+      max-width: 900px;
+      margin: 40px auto;
+      border: 3px solid #b8860b;
+      border-radius: 10px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+      position: relative;
+      overflow: hidden;
+    }
+    .watermark {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-30deg);
+      font-size: 7em;
+      color: rgba(184, 134, 11, 0.08);
+      font-weight: bold;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .header {
+      text-align: center;
+      border-bottom: 3px double #b8860b;
+      padding-bottom: 25px;
+      margin-bottom: 35px;
+      position: relative;
+      z-index: 1;
+    }
+    .header h1 {
+      color: #8b0000;
+      font-size: 2.5em;
+      margin: 0;
+      letter-spacing: 1.5px;
+    }
+    .header .subtitle {
+      color: #555;
+      font-style: italic;
+      margin: 12px 0 0;
+      font-size: 1.2em;
+    }
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: justify;
+    }
+    .content p {
+      margin-bottom: 18px;
+    }
+    .content strong {
+      color: #8b0000;
+    }
+    .content ul {
+      margin: 20px 0;
+      padding-left: 30px;
+    }
+    .content li {
+      margin-bottom: 8px;
+    }
+    .warning {
+      background: #fff8e1;
+      border-left: 5px solid #ffb300;
+      padding: 15px;
+      margin: 25px 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px dashed #ccc;
+      color: #777;
+      font-size: 0.9em;
+    }
+    .button {
+      background: linear-gradient(45deg, #8b0000, #a52a2a);
+      margin-top: 20px;
+    }
+    .button:hover {
+      background: linear-gradient(45deg, #a52a2a, #8b0000);
+    }
+  </style>
+</head>
+<body>
+  <div class="watermark">DFIR LAB</div>
+  <div class="container">
+    <div class="header">
+      <h1>ISTRUZIONI PER L’INVESTIGATORE</h1>
+      <p class="subtitle">Digital Forensics Lab – Caso Delicious Cake</p>
+      <p class="subtitle">Documento Riservato</p>
+    </div>
+
+    <div class="content">
+      <p><strong>Caro investigatore,</strong></p>
+      <p>ti ringraziamo per fornire il tuo supporto in questa indagine e affinché tu possa condurre al meglio l’analisi, ti forniamo di seguito alcune indicazioni.</p>
+
+      <h2>Prepara il tuo arsenale di tools forensi come segue:</h2>
+      <ul>
+        <li>Notepad o Notepad++</li>
+        <li>Autopsy</li>
+        <li>Volatility</li>
+        <li>Event Viewer</li>
+        <li>Wireshark</li>
+        <li>VirusTotal</li>
+        <li>Mitre Framework</li>
+        <li>Cyberchef</li>
+      </ul>
+
+      <div class="warning">
+        <p><strong>Nel corso dell’investigazione dovrai rilevare la presenza di un file malevolo, non è assolutamente richiesta l’analisi, pertanto non estrarlo, verrà rilevato da eventuali antivirus.</strong></p>
+      </div>
+
+      <p><strong>Consigliamo fortemente di prendere appunti per ogni singolo step</strong> sia per quanto riguarda le evidenze trovate, sia per le risposte corrette, il form condiviso non consente di salvare le risposte, pertanto qualora non dovessi terminare l’investigazione in una volta sola, dovrai nuovamente reinserirle!</p>
+
+      <p><strong>Buona investigazione!</strong></p>
+    </div>
+
+    <div class="footer">
+      <p>© 2025 Digital Forensics Lab – Andrea Mangano</p>
+      <a href="deliciouscake.html" class="button">Torna al Quiz</a>
+    </div>
+  </div>
+</body>
+</html>
